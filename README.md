@@ -24,10 +24,10 @@
 <p> A primeira parte deve ser mudada para o tamanho do disco usado. Por exemplo: 240GB <br>
 
   ``  parted --script /dev/sda \
-			mklabel gpt \
-			mkpart efi fat32 1MiB 512MiB \
-			mkpart primary ext4 512MiB 236GB \
-			mkpart primary linux-swap 237GB 240GB \
-			set 1 boot on  
+      mklabel gpt \
+      mkpart efi fat32 1MiB 512MiB \
+      mkpart primary ext4 512MiB 236GB \
+      mkpart primary linux-swap 237GB 240GB \
+      set 1 boot on  
 ``
 </p>
