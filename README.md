@@ -3,8 +3,8 @@
 <h2> Esse instalador foi criado para adiantar o processo de instalação da distribuição pura do arch linux</h2>
 
 <p>
-  Primeiro deve verificar a bios do seu computador para poder utilizar o script correto, 
-  caso seja UEFI usar o "EFI-install.sh" junto com o "instalador-chroot.sh" ,
+  Primeiro deve verificar a bios do seu computador para poder utilizar o script correto, <br> 
+  caso seja UEFI usar o "EFI-install.sh" junto com o "instalador-chroot.sh" , <br>
   o modo de instalação bios legacy está configurado no arquivo "legacy-install.sh" junto ao segundo script "instalar-chroot-legacy.sh"
 </p> 
 
