@@ -10,18 +10,18 @@
 
 <h3> Menu de instalação </h3>
 
-<p> 1- Criação das partiçoes - comando parted
-	2- Formatação das partiçoes
-	3- Montagem das partiçoes
-	4- Instalaçao dos pacotes - pacstrap
-	5- Arch-Chroot - instalação da segunda parte
-	6- Atualizar pacotes iniciais (obrigatorio) de inicio para pacstrap funcionar corretamente.
-	7- Definir a senha do usuario root para acesso ssh
-	8- sair do software</p>
+<p> 1- Criação das partiçoes - comando parted <br>
+	2- Formatação das partiçoes <br>
+	3- Montagem das partiçoes <br>
+	4- Instalaçao dos pacotes - pacstrap <br>
+	5- Arch-Chroot - instalação da segunda parte <br>
+	6- Atualizar pacotes iniciais (obrigatorio) de inicio para pacstrap funcionar corretamente.<br>
+	7- Definir a senha do usuario root para acesso ssh <br>
+	8- sair do software</p> <br>
 
-<h3> Partições </h3>
+<h3> Partições </h3> <br>
 
-<p> A primeira parte deve ser mudada para o tamanho do disco usado. Por exemplo: 240GB 
+<p> A primeira parte deve ser mudada para o tamanho do disco usado. Por exemplo: 240GB <br>
 
   ``  parted --script /dev/sda \
 			mklabel gpt \
