@@ -18,7 +18,7 @@ while read -p "Digite a opção de entrada:" entrada
 			parted --script /dev/sda \
 			mklabel gpt \
 			mkpart efi fat32 1MiB 512MiB \
-			mkpart primary ext4 512MiB 74G \
+			mkpart primary ext4 512MiB 74GB \
 			mkpart primary linux-swap 75GB 80GB \
 			set 1 boot on
 		elif [ $entrada -eq 2 ]; then
