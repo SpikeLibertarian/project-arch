@@ -7,7 +7,7 @@ locale-gen
 echo "LANG=pt_BR.UTF-8" >> /etc/locale.conf
 echo "KEYMAP=br-abnt2" >> /etc/vconsole.conf
 sleep 5
-echo "Digite o usuario root e depois crie a senha:"
+echo "Definir a senha para o usuario root:"
 read -r rei
 passwd -u $rei
 sleep 5
