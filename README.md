@@ -4,8 +4,8 @@
 
 <p>
   Primeiro deve verificar a bios do seu computador para poder utilizar o script correto, 
-  caso seja UEFI usar o EFI-install.sh junto com o ``instalador-chroot.sh`` ,
-  o modo de instalação bios legacy está configurado no arquivo legacy-install.sh junto ao segundo script ``instalar-chroot-legacy.sh ``
+  caso seja UEFI usar o "EFI-install.sh" junto com o "instalador-chroot.sh" ,
+  o modo de instalação bios legacy está configurado no arquivo "legacy-install.sh" junto ao segundo script "instalar-chroot-legacy.sh"
 </p> 
 
 <h3> Menu de instalação </h3>
@@ -21,13 +21,12 @@
 
 <h3> Partições </h3> <br>
 
-<p> A primeira parte deve ser mudada para o tamanho do disco usado. Por exemplo: 240GB <br>
+<p> A primeira parte deve ser mudada para o tamanho do disco usado. Por exemplo: 240GB</p> <br>
 
-  ``  parted --script /dev/sda \
-      mklabel gpt \
-      mkpart efi fat32 1MiB 512MiB \
-      mkpart primary ext4 512MiB 236GB \
-      mkpart primary linux-swap 237GB 240GB \
-      set 1 boot on  
-``
-</p>
+  <p> parted --script /dev/sda \</p> <br>
+  <p> mklabel gpt \ </p><br>
+  <p> mkpart efi fat32 1MiB 512MiB \ </p><br>
+  <p> mkpart primary ext4 512MiB 236GB \ </p><br>
+  <p> mkpart primary linux-swap 237GB 240GB \ </p><br>
+  <p> set 1 boot on </p> 
+
