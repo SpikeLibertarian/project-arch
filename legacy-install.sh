@@ -15,7 +15,7 @@ while read -p "Digite a opção de entrada:" entrada
 		if [ $entrada -eq 1 ]; then
 			parted --script /dev/sda \
 			mklabel msdos \
-			mkpart primary ext4 1MiB 74G \
+			mkpart primary ext4 1MiB 74GB \
 			mkpart primary linux-swap 75GB 80GB \
 			set 1 boot on
 		elif [ $entrada -eq 2 ]; then
