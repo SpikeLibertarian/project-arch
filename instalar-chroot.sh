@@ -14,7 +14,7 @@ ln -sf /usr/share/zone/{$tempo_zona} /etc/localtime
 sleep 2
 echo "Crie a senha para o usuario root:"
 read -r rei
-passwd  $rei
+passwd -u $rei
 
 echo -n "Entre com hostname:"
 read -r hostname
